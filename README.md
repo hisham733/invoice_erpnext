@@ -90,7 +90,7 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
 ### 5. Setup
 
 1. Clone this repo.
-    - `git clone https://github.com/msf4-0/IRPS-Autocount-Integration.git`
+    - `git clone https://github.com/msf4-0/IRPS-Short_Courses-SQL_Accounting-Autocount-frepple.git`
 
 2. Navigate to the cloned folder.
     - `cd IRPS-Autocount-Integration`

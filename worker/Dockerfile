@@ -8,4 +8,6 @@ RUN install_app metabase_integration https://github.com/${GITHUB_OWNER}/ERPNext-
   install_app erpnext_telegram_integration https://github.com/${GITHUB_OWNER}/ERPNext-Telegram-Integration master && \
   install_app frepple https://github.com/${GITHUB_OWNER}/ERPNext-Frepple-Enhanced-Integration main && \
   install_app barcode_shrdc https://github.com/${GITHUB_OWNER}/ERPNext-Barcode-Integration master && \
-  install_app autocount https://github.com/${GITHUB_OWNER}/ERPNext-Autocount-Integration master
+  install_app autocount https://github.com/${GITHUB_OWNER}/ERPNext-Autocount-Integration master && \
+  install_app sql_accounting_software https://github.com/Nb-Richard/sql_accounting main && \
+  install_app Short_Courses https://github.com/Shakila-Sahira/ERPNext-Short-Courses
