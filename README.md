@@ -103,10 +103,10 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
 ### 5. Setup
 
 1. Clone this repo.
-    - `git clone https://github.com/msf4-0/IRPS-Short_Courses-SQL_Accounting-Autocount-frepple`
+    - `git clone https://github.com/hisham733/invoice_erpnext`
 
 2. Navigate to the cloned folder.
-    - `cd IRPS-SQL_Accounting-Autocount-frepple`
+    - `cd invoice_erpnext`
 
 3. In `enx-example`, you can change the variables that would be used in this installation process to your preference such as the following:
     - Server port to host ERPNext,`ERPNEXT_SERVER_PORT`. Default is `8000`.
@@ -124,21 +124,21 @@ In order to utilise the full integration between ERPNext and Frepple, you will n
     
     Note: 
     - Replace `<project_name>` to your preference.
-    - For example, `docker-compose -p project1 up -d`
+    - For example, `docker-compose -p invoce up -d`
 
 6. Monitor the site creation progress by logging into the `<project_name>-site-creator-1` container. To do this step, use this command `docker logs <project_name>-site-creator-1 -f`. 
     
     Note:
     - Replace `<project_name>` to the same project name as in step 4.
     - For example, `docker logs project1-site-creator-1 -f`.
-    - If you face `no such container` error, try with `docker logs project1-site-creator_1 -f` or `docker logs project1_site-creator_1 -f`.
+    - If you face `no such container` error, try with `docker logs project1-site-creator_1 -f` or `docker logs invoce_site-creator_1 -f`.
 
 7. After the `<project_name>-site-creator-1` container display `Scheduler is disabled`, login to `<project_name>-erpnext-python-1` container. Use `docker exec -it --user root <project_name>-erpnext-python-1 /bin/bash` to login into this container as a root user.
     
     Note:
     - Replace `<project_name>` to the same project name selected in step 4.
     - For example, `docker exec -it --user root project1-erpnext-python-1 /bin/bash`.
-    - If you face `no such container` error, try with `docker exec -it --user root project1-erpnext-python_1 /bin/bash` or `docker exec -it --user root project1_erpnext-python_1 /bin/bash`.
+    - If you face `no such container` error, try with `docker exec -it --user root project1-erpnext-python_1 /bin/bash` or `docker exec -it --user root invoce_erpnext-python_1 /bin/bash`.
  
  
 8. Once you login in into `<project_name>-erpnext-python-1` container, by default, you will be in the `~:/home/frappe/frappe-bench/sites` directory. Navigate out to `~:/home/frappe/frappe-bench` directory by typing `cd ..`.
