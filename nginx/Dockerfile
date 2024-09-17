@@ -24,6 +24,8 @@ RUN /install_frappe ${FRAPPE_BRANCH} && \
   /install_app autocount https://github.com/${GITHUB_OWNER}/ERPNext-Autocount-Integration master && \
   /install_app short_courses https://github.com/Shakila-Sahira/ERPNext-Short-Courses && \
   /install_app e_invoice_erp https://github.com/hisham733/E-Invoice-ERP && \  
+  cd /home/frappe/frappe-bench/apps/e_invoice_erp && \
+  git pull origin master && \     # Add git pull to fetch the latest changes
   /prepare_production
 
 FROM frappe/erpnext-nginx:${FRAPPE_BRANCH}
